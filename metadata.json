@@ -1,0 +1,11 @@
+{
+  "name": "Remix Remix Copy of AI Interview Intelligence \u0026 Evaluation System",
+  "description": "Enterprise-grade AI-Powered Interview Evaluation System using Transformer Encoder-Decoder with AI Bottleneck Detection",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

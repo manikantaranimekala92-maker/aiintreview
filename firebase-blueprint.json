@@ -1,0 +1,41 @@
+{
+  "entities": {
+    "users": {
+      "title": "User Profile",
+      "description": "User profiles and candidate account records",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "email": { "type": "string" },
+        "role": { "type": "string" },
+        "createdAt": { "type": "string" },
+        "avatar": { "type": "string" },
+        "emailVerified": { "type": "boolean" }
+      },
+      "required": ["id", "email", "name"]
+    },
+    "interviewSessions": {
+      "title": "Interview Sessions",
+      "description": "Candidate mock interview sessions and evaluation results",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "candidateId": { "type": "string" },
+        "candidateEmail": { "type": "string" },
+        "candidateName": { "type": "string" },
+        "jobTitle": { "type": "string" },
+        "mode": { "type": "string" },
+        "difficulty": { "type": "string" },
+        "overallScore": { "type": "number" },
+        "durationMinutes": { "type": "number" },
+        "date": { "type": "string" },
+        "answers": { "type": "array" },
+        "evaluations": { "type": "array" },
+        "bottleneckReport": { "type": "object" },
+        "recordingUrl": { "type": "string" }
+      },
+      "required": ["id", "candidateId", "jobTitle"]
+    }
+  }
+}
